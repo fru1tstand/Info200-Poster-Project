@@ -31,7 +31,27 @@
     margin-right: 10px;
     display: inline-block; }
   #find-results .entry i {
-    margin: 0 2.6px; }
+    margin: 0 2px; }
+    #find-results .entry i::before, #find-results .entry i::after {
+      font-size: 16px; }
+    #find-results .entry i > span {
+      font-size: 12px;
+      line-height: 16px;
+      height: 16px;
+      background-color: #222;
+      border-radius: 10px;
+      padding: 0;
+      display: inline-block;
+      margin: 0 2px;
+      width: 0;
+      overflow: hidden;
+      text-align: center;
+      -webkit-transition: width cubic-bezier(0.3, 0.3, 0.02, 1) 0.1s, padding cubic-bezier(0.3, 0.3, 0.02, 1) 0.1s;
+      -moz-transition: width cubic-bezier(0.3, 0.3, 0.02, 1) 0.1s, padding cubic-bezier(0.3, 0.3, 0.02, 1) 0.1s;
+      transition: width cubic-bezier(0.3, 0.3, 0.02, 1) 0.1s, padding cubic-bezier(0.3, 0.3, 0.02, 1) 0.1s; }
+    #find-results .entry i:hover > span {
+      width: 200px;
+      padding: 0 10px; }
   #find-results .entry .fill {
     float: right; }
 

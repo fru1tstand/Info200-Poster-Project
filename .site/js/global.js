@@ -2,7 +2,7 @@
 (function (window, document) {
 	var timeDelay = 500, // ms
 		cascadeDelay = 100,
-		searchingTimeDelay = 2000,
+		searchingTimeDelay = 1500,
 		resultsTimeDelay = 1000;
 
 

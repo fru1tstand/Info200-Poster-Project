@@ -21,13 +21,13 @@ class StatusIcon {
 	public static function getHtml($iconId) {
 		switch($iconId) {
 			case self::LOUD:
-				return '<i class="fa fa-volume-up" title="It\'s loud here!"></i>';
+				return '<i class="fa fa-volume-up" title="It\'s loud here!"><span>It\'s loud here</span></i>';
 			case self::EVENT:
-				return '<i class="fa fa-warning" title="There\'s an event going on"></i>';
+				return '<i class="fa fa-warning" title="There\'s an event going on"><span>There\'s an event going on</span></i>';
 			case self::FRIEND:
-				return '<i class="fa fa-child" title="You\'ve got a friend studying here"></i>';
+				return '<i class="fa fa-child" title="You\'ve got a friend studying here"><span>You\'ve got a friend studying here</span></i>';
 			case self::CLASSMATE:
-				return '<i class="fa fa-user" title="You\'ve got a classmate here"></i>';
+				return '<i class="fa fa-user" title="You\'ve got a classmate here"><span>You\'ve got a classmate here</span></i>';
 			default:
 				return "";
 		}

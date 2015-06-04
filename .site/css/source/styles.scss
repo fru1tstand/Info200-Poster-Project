@@ -44,7 +44,35 @@ $default-transition-pattern: cubic-bezier(0.3, 0.3, 0.02, 1);
 		display: inline-block;
 	}
 	i {
-		margin: 0 2.6px;
+		margin: 0 2px;
+		&::before,
+		&::after {
+			font-size: 16px;
+		}
+
+		> span {
+			font-size: 12px;
+			line-height: 16px;
+			height: 16px;
+			background-color: #222;
+			border-radius: 10px;
+			padding: 0;
+			display: inline-block;
+			margin: 0 2px;
+			width: 0;
+			overflow: hidden;
+			text-align: center;
+
+			@include transition(width $default-transition-pattern 0.1s,
+					padding $default-transition-pattern 0.1s);
+		}
+
+		&:hover {
+			> span {
+				width: 200px;
+				padding: 0 10px;
+			}
+		}
 	}
 	.fill {
 		float: right;
