@@ -9,6 +9,10 @@ $default-transition-pattern: cubic-bezier(0.3, 0.3, 0.02, 1);
 	transition: $params;
 }
 
+.navbar i {
+	padding-left: 10px;
+}
+
 .transition {
 	@include transition(opacity $default-transition-pattern $default-transition-time,
 			margin-top $default-transition-pattern $default-transition-time);
@@ -54,7 +58,6 @@ $default-transition-pattern: cubic-bezier(0.3, 0.3, 0.02, 1);
 			font-size: 12px;
 			line-height: 16px;
 			height: 16px;
-			background-color: #222;
 			border-radius: 10px;
 			padding: 0;
 			display: inline-block;

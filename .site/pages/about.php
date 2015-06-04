@@ -3,7 +3,7 @@
 	<div class="page-header">
 		<div class="row">
 			<div class="col-lg-12">
-				<h1>UW StudyFinder</h1>
+				<h1>UW SpotSpotter</h1>
 				<p class="lead">About</p>
 			</div>
 		</div>
@@ -46,7 +46,9 @@
 
 	<div class="row">
 		<div class="col-lg-12">
-			<p>There's nothing to lose! <a href="/">Get started now!</</p>
+			<p>There's nothing to lose! <a href="/">Get started now!</a></p>
 		</div>
 	</div>
+
+	<div class="row"><div class="col-lg-12"></div></div>
 </div>

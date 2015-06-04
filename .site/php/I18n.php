@@ -35,7 +35,7 @@ class I18n {
 			case self::LOCALE_EN_US:
 			default:
 				include $_SERVER["DOCUMENT_ROOT"] . '/.site/php/I18n/en-us.php';
-				break;
+			break;
 		}
 		self::$isLangSet = true;
 	}
