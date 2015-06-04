@@ -61,7 +61,7 @@ if (!in_array($pageRequest, $pages))
 	</div>
 </nav>
 
-<?php include "/.site/pages/$pageRequest.php"; ?>
+<?php include $_SERVER["DOCUMENT_ROOT"] . "/.site/pages/$pageRequest.php"; ?>
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 <script src="/.site/js/global.js"></script>
