@@ -68,13 +68,13 @@ if (!in_array($pageRequest, $pages))
 
 		<div class="collapse navbar-collapse" id="navbar">
 			<ul class="nav navbar-nav">
-				<li class="<?php if($pageRequest == "home") echo "active"; ?>"><a href="/">Find Study Spaces</a></li>
-				<li class="<?php if($pageRequest == "about") echo "active"; ?>"><a href="/about">About</a></li>
+				<li class="<?php if($pageRequest == "home") echo "active"; ?>"><a href="/"><?php echo I18n::get(I18n::NAV_FIND); ?></a></li>
+				<li class="<?php if($pageRequest == "about") echo "active"; ?>"><a href="/about"><?php echo I18n::get(I18n::NAV_ABOUT); ?></a></li>
 			</ul>
 
 			<ul class="nav navbar-nav navbar-right">
 				<li class="dropdown">
-					<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Theme <i class="fa fa-image"></i></a>
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"><?php echo I18n::get(I18n::NAV_THEME); ?> <i class="fa fa-image"></i></a>
 					<ul class="dropdown-menu" role="menu">
 						<li class="<?php if ($_SESSION['theme'] == "CERULEAN") echo "active"; ?>"><a href="/?theme=cerulean">Cerulean</a></li>
 						<li class="<?php if ($_SESSION['theme'] == "CYBORG") echo "active"; ?>"><a href="/?theme=cyborg">Cyborg</a></li>
@@ -94,9 +94,15 @@ if (!in_array($pageRequest, $pages))
 					</ul>
 				</li>
 				<li class="dropdown">
-					<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Language <i class="fa fa-language"></i></a>
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"><?php echo I18n::get(I18n::NAV_LANGUAGE); ?> <i class="fa fa-language"></i></a>
 					<ul class="dropdown-menu" role="menu">
-						<li class="active"><a href="/?lang=en">English</a></li>
+						<li class="<?php if ($_SESSION['theme'] == "en-us") echo "active"; ?>"><a href="/?lang=en-us">English</a></li>
+						<li class="<?php if ($_SESSION['theme'] == "en-us") echo "active"; ?>"><a href="/?lang=zh-cn">中国简化 (Chinese Simplified)</a></li>
+						<li class="<?php if ($_SESSION['theme'] == "en-us") echo "active"; ?>"><a href="/?lang=zh-hk">中國傳統 (Chinese Traditional)</a></li>
+						<li class="<?php if ($_SESSION['theme'] == "en-us") echo "active"; ?>"><a href="/?lang=ko-kr">한국의 (Korean)</a></li>
+						<li class="<?php if ($_SESSION['theme'] == "en-us") echo "active"; ?>"><a href="/?lang=es-co">Español (Spanish)</a></li>
+						<li class="<?php if ($_SESSION['theme'] == "en-us") echo "active"; ?>"><a href="/?lang=vi-vn">Tiếng Việt (Vietnamese)</a></li>
+
 					</ul>
 				</li>
 			</ul>
