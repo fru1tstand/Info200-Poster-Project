@@ -1,0 +1,84 @@
+@charset "UTF-8";
+
+$default-transition-time: 0.5s;
+$default-transition-pattern: cubic-bezier(0.3, 0.3, 0.02, 1);
+
+@mixin transition($params...) {
+	-webkit-transition: $params;
+	-moz-transition: $params;
+	transition: $params;
+}
+
+.transition {
+	@include transition(opacity $default-transition-pattern $default-transition-time,
+			margin-top $default-transition-pattern $default-transition-time);
+	display: none;
+}
+.transition-setup {
+	display: block;
+	opacity: 0;
+	margin-top: 225px;
+}
+.transition-in {
+	opacity: 1;
+	margin-top: 125px;
+}
+.transition-out {
+	opacity: 0;
+	margin-top: 25px;
+}
+.transition-final {
+	margin-top: 25px;
+}
+
+// Home page styles
+#find-results.transition-in,
+.other-places{
+	margin-top: 35px;
+}
+#find-results .entry {
+	margin: 5px 0;
+	.title,
+	.icons {
+		margin-right: 10px;
+		display: inline-block;
+	}
+	i {
+		margin: 0 2.6px;
+	}
+	.fill {
+		float: right;
+	}
+}
+#results-recommend,
+#results-recommend-well,
+#results-other,
+#results-other-well {
+	@include transition(opacity $default-transition-pattern $default-transition-time);
+	opacity: 0;
+
+	&.show {
+		opacity: 1;
+	}
+
+}
+.entry-transition {
+	@include transition(opacity $default-transition-pattern $default-transition-time);
+	display: none;
+
+	.progress-bar {
+		@include transition(width $default-transition-pattern $default-transition-time);
+	}
+
+	.entry-transition-hold .progress-bar {
+		width: 0 !important;
+	}
+}
+.entry-transition-setup {
+	display: block;
+	opacity: 0;
+}
+.entry-transition-in {
+	opacity: 1;
+}
+

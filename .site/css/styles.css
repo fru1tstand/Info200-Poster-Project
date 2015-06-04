@@ -1,0 +1,71 @@
+.transition {
+  -webkit-transition: opacity cubic-bezier(0.3, 0.3, 0.02, 1) 0.5s, margin-top cubic-bezier(0.3, 0.3, 0.02, 1) 0.5s;
+  -moz-transition: opacity cubic-bezier(0.3, 0.3, 0.02, 1) 0.5s, margin-top cubic-bezier(0.3, 0.3, 0.02, 1) 0.5s;
+  transition: opacity cubic-bezier(0.3, 0.3, 0.02, 1) 0.5s, margin-top cubic-bezier(0.3, 0.3, 0.02, 1) 0.5s;
+  display: none; }
+
+.transition-setup {
+  display: block;
+  opacity: 0;
+  margin-top: 225px; }
+
+.transition-in {
+  opacity: 1;
+  margin-top: 125px; }
+
+.transition-out {
+  opacity: 0;
+  margin-top: 25px; }
+
+.transition-final {
+  margin-top: 25px; }
+
+#find-results.transition-in,
+.other-places {
+  margin-top: 35px; }
+
+#find-results .entry {
+  margin: 5px 0; }
+  #find-results .entry .title,
+  #find-results .entry .icons {
+    margin-right: 10px;
+    display: inline-block; }
+  #find-results .entry i {
+    margin: 0 2.6px; }
+  #find-results .entry .fill {
+    float: right; }
+
+#results-recommend,
+#results-recommend-well,
+#results-other,
+#results-other-well {
+  -webkit-transition: opacity cubic-bezier(0.3, 0.3, 0.02, 1) 0.5s;
+  -moz-transition: opacity cubic-bezier(0.3, 0.3, 0.02, 1) 0.5s;
+  transition: opacity cubic-bezier(0.3, 0.3, 0.02, 1) 0.5s;
+  opacity: 0; }
+  #results-recommend.show,
+  #results-recommend-well.show,
+  #results-other.show,
+  #results-other-well.show {
+    opacity: 1; }
+
+.entry-transition {
+  -webkit-transition: opacity cubic-bezier(0.3, 0.3, 0.02, 1) 0.5s;
+  -moz-transition: opacity cubic-bezier(0.3, 0.3, 0.02, 1) 0.5s;
+  transition: opacity cubic-bezier(0.3, 0.3, 0.02, 1) 0.5s;
+  display: none; }
+  .entry-transition .progress-bar {
+    -webkit-transition: width cubic-bezier(0.3, 0.3, 0.02, 1) 0.5s;
+    -moz-transition: width cubic-bezier(0.3, 0.3, 0.02, 1) 0.5s;
+    transition: width cubic-bezier(0.3, 0.3, 0.02, 1) 0.5s; }
+  .entry-transition .entry-transition-hold .progress-bar {
+    width: 0 !important; }
+
+.entry-transition-setup {
+  display: block;
+  opacity: 0; }
+
+.entry-transition-in {
+  opacity: 1; }
+
+/*# sourceMappingURL=styles.css.map */
