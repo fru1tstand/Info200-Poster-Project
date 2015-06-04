@@ -1,6 +1,12 @@
 .navbar i {
   padding-left: 10px; }
 
+.spacer {
+  height: 50px; }
+
+.small-spacer {
+  height: 20px; }
+
 .transition {
   -webkit-transition: opacity cubic-bezier(0.3, 0.3, 0.02, 1) 0.5s, margin-top cubic-bezier(0.3, 0.3, 0.02, 1) 0.5s;
   -moz-transition: opacity cubic-bezier(0.3, 0.3, 0.02, 1) 0.5s, margin-top cubic-bezier(0.3, 0.3, 0.02, 1) 0.5s;

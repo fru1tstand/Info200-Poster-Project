@@ -42,5 +42,15 @@
 		</div>
 	</div>
 
-	<div class="row"><div class="col-lg-12"></div></div>
+	<div class="spacer"></div>
+	<div class="row">
+		<div class="col-lg-12">
+			<div class="well">
+				<p>Crafted with love by Info 200 team AA: Red</p>
+				<p>Molly Dubow | Jonghyun Park (Joey) | Hoang Pham | Kodlee Yin</p>
+				<hr />
+				<a href="https://github.com/fru1tstand/Info200-Poster-Project">Check out how this site was made.</a> That's the beauty of open source.
+			</div>
+		</div>
+	</div>
 </div>

@@ -36,13 +36,14 @@ if (!in_array($pageRequest, $pages))
 ?>
 <!DOCTYPE html>
 <html lang="en">
-<head><!--
+<head>
+<!--
 	Heya! Yeah, I know. Bootstrap. Don't hate. It's an intro info course. :)
 	Feel free to look at the source: https://github.com/fru1tstand/Info200-Poster-Project
 	Enjoy my past 3 hours of work... I really shoulda done this sooner...
 -->
 
-	<title>UW Info200 - AA: Red - App Mock</title>
+	<title>UW SpotSpotter</title>
 	<meta charset="UTF-8" />
 	<link type="text/css" rel="stylesheet"
 		  href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" />
