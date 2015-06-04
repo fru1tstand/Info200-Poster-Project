@@ -57,7 +57,7 @@ if (!in_array($pageRequest, $pages))
 <nav class="navbar navbar-default">
 	<div class="container">
 		<div class="navbar-header">
-			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
 				<span class="sr-only">Toggle navigation</span>
 				<span class="icon-bar"></span>
 				<span class="icon-bar"></span>
@@ -66,7 +66,7 @@ if (!in_array($pageRequest, $pages))
 			<a class="navbar-brand" href="/">UW SpotSpotter</a>
 		</div>
 
-		<div class="collapse navbar-collapse">
+		<div class="collapse navbar-collapse" id="navbar">
 			<ul class="nav navbar-nav">
 				<li class="<?php if($pageRequest == "home") echo "active"; ?>"><a href="/">Find Study Spaces</a></li>
 				<li class="<?php if($pageRequest == "about") echo "active"; ?>"><a href="/about">About</a></li>
